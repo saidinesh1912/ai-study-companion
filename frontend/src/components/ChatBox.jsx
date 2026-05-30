@@ -29,7 +29,7 @@ try{
 const res=
 await axios.post(
 
-"http://localhost:5000/api/ai/chat",
+"https://ai-study-companion-9tt2.onrender.com/api/ai/chat",
 
 {
 

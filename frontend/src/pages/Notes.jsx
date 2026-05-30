@@ -89,7 +89,7 @@ const res=
 
 await axios.get(
 
-`http://localhost:5000/api/pdf/${user.uid}`
+`https://ai-study-companion-9tt2.onrender.com/api/pdf/${user.uid}`
 
 );
 
@@ -124,7 +124,7 @@ const res=
 
 await axios.get(
 
-`http://localhost:5000/api/notes/${user.uid}`
+`https://ai-study-companion-9tt2.onrender.com/api/notes/${user.uid}`
 
 );
 
@@ -181,7 +181,7 @@ p._id===selectedPdf
 
 await axios.post(
 
-"http://localhost:5000/api/notes/generate",
+"https://ai-study-companion-9tt2.onrender.com/api/notes/generate",
 
 {
 

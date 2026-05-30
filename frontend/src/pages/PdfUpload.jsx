@@ -74,7 +74,7 @@ subject
 );
 
 await axios.post(
-"http://localhost:5000/api/pdf/upload",
+"https://ai-study-companion-9tt2.onrender.com/api/pdf/upload",
 formData
 );
 
@@ -121,7 +121,7 @@ const res=
 
 await axios.get(
 
-`http://localhost:5000/api/pdf/${auth.currentUser.uid}`
+`https://ai-study-companion-9tt2.onrender.com/api/pdf/${auth.currentUser.uid}`
 
 );
 

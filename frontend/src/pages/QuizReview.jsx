@@ -51,7 +51,7 @@ const res=
 
 await axios.get(
 
-`http://localhost:5000/api/quiz-results/review/${id}`
+`https://ai-study-companion-9tt2.onrender.com/api/quiz-results/review/${id}`
 
 );
 

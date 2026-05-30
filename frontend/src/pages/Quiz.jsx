@@ -97,7 +97,7 @@ const res=
 
 await axios.get(
 
-`http://localhost:5000/api/notes/${user.uid}`
+`https://ai-study-companion-9tt2.onrender.com/api/notes/${user.uid}`
 
 );
 
@@ -134,7 +134,7 @@ const res=
 
 await axios.get(
 
-`http://localhost:5000/api/quiz-results/${user.uid}`
+`https://ai-study-companion-9tt2.onrender.com/api/quiz-results/${user.uid}`
 
 );
 
@@ -189,7 +189,7 @@ const res=
 
 await axios.post(
 
-"http://localhost:5000/api/quiz/generate",
+"https://ai-study-companion-9tt2.onrender.com/api/quiz/generate",
 
 {
 
@@ -344,7 +344,7 @@ n._id===selectedNote
 
 await axios.post(
 
-"http://localhost:5000/api/quiz-results/save",
+"https://ai-study-companion-9tt2.onrender.com/api/quiz-results/save",
 
 {
 

@@ -72,7 +72,7 @@ const res=
 
 await axios.get(
 
-`http://localhost:5000/api/notes/${user.uid}`
+`https://ai-study-companion-9tt2.onrender.com/api/notes/${user.uid}`
 
 );
 
@@ -107,7 +107,7 @@ const res=
 
 await axios.get(
 
-`http://localhost:5000/api/flashcards/${user.uid}`
+`https://ai-study-companion-9tt2.onrender.com/api/flashcards/${user.uid}`
 
 );
 
@@ -158,7 +158,7 @@ n._id===selectedNote
 
 await axios.post(
 
-"http://localhost:5000/api/flashcards/generate",
+"https://ai-study-companion-9tt2.onrender.com/api/flashcards/generate",
 
 {
 
