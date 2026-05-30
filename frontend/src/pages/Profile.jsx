@@ -25,7 +25,8 @@ from "../firebase/firebase";
 
 import {
 
-signOut
+signOut,
+deleteUser
 
 }
 
@@ -270,6 +271,44 @@ navigate("/");
 catch(error){
 
 console.log(error);
+
+}
+
+};
+const deleteAccount =
+async()=>{
+
+const confirmDelete =
+window.confirm(
+"Are you sure you want to permanently delete your account?"
+);
+
+if(!confirmDelete)
+return;
+
+try{
+
+await deleteUser(
+auth.currentUser
+);
+
+localStorage.clear();
+
+alert(
+"Account deleted successfully"
+);
+
+navigate("/");
+
+}
+
+catch(error){
+
+console.log(error);
+
+alert(
+error.message
+);
 
 }
 
@@ -624,6 +663,8 @@ Logout
 <button
 
 className="delete-btn"
+
+onClick={deleteAccount}
 
 >
 
